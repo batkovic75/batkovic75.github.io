@@ -19,15 +19,20 @@ minify:
 
 menu:
   main:
-    - name: Blog
+    - identifier: blog
+      name: Blog
       url: blog/
+      title: Blog section
       weight: 10
     - identifier: cv
       name: CV
       url: cv/
+      title: Find my CV there
       weight: 15
-    - name: Projects
+    - identifier: projects
+      name: Projects
       url: projects/
+      title: Here are my different projects
       weight: 20
 
 
@@ -72,6 +77,11 @@ params:
 
       - I worked 7 years in QoS/QoE domain applied to telecoms where I started as an Embedded Engineer to finally become a Data Engineer.
       Today my true interest relies into building scalable data infrastructures that address game changing use cases.
+
+
+      
+      > "The best minds of my generation are thinking about how to make people click ads. That sucks."
+      -- *Jeff Hammerbacher*
 
 
 
