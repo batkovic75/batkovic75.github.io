@@ -1,6 +1,7 @@
 ---
 title: "CV"
 url: "/cv"
+draft: true
 ---
 
 ### Data Engineer
