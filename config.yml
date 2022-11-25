@@ -31,6 +31,7 @@ menu:
       weight: 20
 
 
+
 params:
   env: production
   title: Gerald Latkovic
@@ -63,24 +64,26 @@ params:
     iconHeight: 35
 
 
-  # home-info mode
+  # Details concerning home page
   homeInfoParams:
     Title: "About me"
     Content: >
       Software Engineer with a main interest into data analytics.
 
       - I worked 7 years in QoS/QoE domain applied to telecoms where I started as an Embedded Engineer to finally become a Data Engineer.
-      🚀
+      Today my true interest relies into building scalable data infrastructures that address game changing use cases.
+
 
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/mapper1337"
-    - name: stackoverflow
-      url: "https://stackoverflow.com/users/1281590"
     - name: github
       url: "https://github.com/batkovic75"
-
+    - name: linkedin
+      url: "https://www.linkedin.com/in/g%C3%A9rald-latkovic-002795139"
+    - name: email
+      url: "mailto:gerald@latkovic.fr"
+    - name: cv
+      url: "mailto:gerald@latkovic.fr"
 
   cover:
     hidden: true # hide everywhere but not in structured data

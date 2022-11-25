@@ -1,6 +1,6 @@
 ---
 title: "CV"
-url: "/cv"
+url: "/cv/"
 ---
 
 ### Data Engineer
