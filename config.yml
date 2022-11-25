@@ -1,0 +1,88 @@
+baseURL: "https://batkovic75.github.io/"
+title: Gerald Latkovic
+
+theme: "PaperMod"
+paginate: 5
+languageCode: en-us
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+
+menu:
+  main:
+    - name: Blog
+      url: blog/
+      weight: 10
+    - identifier: cv
+      name: CV
+      url: cv/
+      weight: 15
+    - name: Projects
+      url: projects/
+      weight: 20
+
+
+params:
+  env: production
+  title: Gerald Latkovic
+  description: "Blog site about software engineering"
+  keywords: [Blog, Software, Engineer]
+  author: Gerald Latkovic
+  DateFormat: "November 25, 2022"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Gerald Latkovic"
+    icon: aphex_twin.png
+    iconHeight: 35
+
+
+  # home-info mode
+  homeInfoParams:
+    Title: "About me"
+    Content: >
+      Software Engineer with a main interest into data analytics.
+
+      - I worked 7 years in QoS/QoE domain applied to telecoms where I started as an Embedded Engineer to finally become a Data Engineer.
+      🚀
+
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/mapper1337"
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/1281590"
+    - name: github
+      url: "https://github.com/batkovic75"
+
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
