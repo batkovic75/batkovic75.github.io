@@ -17,12 +17,21 @@ This page will describe my CV.. (in a near future) 🙂</description>
     </item>
     
     <item>
-      <title>post</title>
-      <link>https://batkovic75.github.io/post/</link>
+      <title>Experiment rust kafka collector at scale</title>
+      <link>https://batkovic75.github.io/blog/rst-collector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://batkovic75.github.io/post/</guid>
+      <guid>https://batkovic75.github.io/blog/rst-collector/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://batkovic75.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://batkovic75.github.io/projects/</guid>
+      <description>Personal Projects This page regroups every project that I developed over the time.</description>
     </item>
     
   </channel>
