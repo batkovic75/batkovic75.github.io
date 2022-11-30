@@ -23,44 +23,44 @@ This page is under construction.. 🙂
 #### Data Engineer / Cloud Architect
 ###### *Softathome, Paris, France -- (Nov 2019 - Present)*
 
-Design the architecture of new software bricks
-to be developed with the various stakeholders.
-
-Ensuring the convergence of the two data platforms
-analytics while keeping a maximum of
-backward compatibility on products already deployed at
-customers premises.
-
-I built data processing applications to diagnose issues and
-recommend actions using **Kafka Streams** over **Spring Boot**.
-
-Designed and deployed **Google Cloud Platform** service architecture with **Terraform**
-that was responsible of retrieving diagnoses from a machine learning clustering model
-running under **VertexAI** using **Apache Airflow (Composer)** DAGs.
+> Design the architecture of new software bricks
+> to be developed with the various stakeholders.
+> 
+> Ensuring the convergence of the two data platforms
+> analytics while keeping a maximum of
+> backward compatibility on products already deployed at
+> customers premises.
+> 
+> I built data processing applications to diagnose issues and
+> recommend actions using **Kafka Streams** over **Spring Boot**.
+> 
+> Designed and deployed **Google Cloud Platform** service architecture with **Terraform**
+> that was responsible of retrieving diagnoses from a machine learning clustering model
+> running under **VertexAI** using **Apache Airflow (Composer)** DAGs.
 
 #### Cloud Tech Lead
 ###### *Softathome, Paris, France -- (Nov 2017 - Nov 2019)*
 
-Ensure that the technical choices of the platform
-take the right direction while ensuring the
-design and development of new microservices (using **Spring Boot**).
-
-Drafting of architecture documentation with coaching
-and training of newcomers to the team.
-
-Technical presentations internally to R&D but also
-to the various customers, most of the time in English.
+> Ensure that the technical choices of the platform
+> take the right direction while ensuring the
+> design and development of new microservices (using **Spring Boot**).
+> 
+> Drafting of architecture documentation with coaching
+> and training of newcomers to the team.
+> 
+> Technical presentations internally to R&D but also
+> to the various customers, most of the time in English.
 
 #### DevOps Engineer
 ###### *Softathome, Paris, France -- (Nov 2015 - Nov 2017)*
 
-I deployed a Data Analytics solution on IaaS cloud for multiple customers.
-
-In this mission I had the opportunity to :
- - Setup automatic deployement tools in order to create infrastructure (using **Terraform**) and
-    install different services on it (using **Ansible**).
- - Select and configure service monitoring tools, using **Prometheus** in order to collect / store data
-    and **Grafana** to display metrics dashboards.
+> I deployed a Data Analytics solution on IaaS cloud for multiple customers.
+> 
+> In this mission I had the opportunity to :
+> - Setup automatic deployement tools in order to create infrastructure (using **Terraform**) and
+>     install different services on it (using **Ansible**).
+>  - Select and configure service monitoring tools, using **Prometheus** in order to collect / store data
+>     and **Grafana** to display metrics dashboards.
 
 ---
 
@@ -97,7 +97,7 @@ Native speaker
 
 #### English 🇬🇧 🇺🇸
 
-Bilingual speaker
+Fluent
 
 ---
 
