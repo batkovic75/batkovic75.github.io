@@ -12,8 +12,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://batkovic75.github.io/cv/</guid>
-      <description>Data Engineer [draft]
-This page will describe my CV.. (in a near future) 🙂</description>
+      <description>Data Engineer This page is under construction.. 🙂
+☎️ Contact information 📧 gerald@latkovic.fr
+🔗 LinkedIn profile
+🧑‍💻 Work experience Data Engineer / Cloud Architect Softathome, Paris, France &amp;ndash; (Nov 2019 - Present) Design the architecture of new software bricks to be developed with the various stakeholders.
+Ensuring the convergence of the two data platforms analytics while keeping a maximum of backward compatibility on products already deployed at customers premises.
+I built data processing applications to diagnose issues and recommend actions using Kafka Streams over Spring Boot.</description>
     </item>
     
     <item>
