@@ -65,8 +65,8 @@ params:
 
   label:
     text: "Gerald Latkovic"
-    icon: aphex_twin.png
-    iconHeight: 35
+    icon: ghost.png
+    iconHeight: 40
 
 
   # Details concerning home page
