@@ -7,13 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://batkovic75.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Experiment rust kafka collector at scale</title>
+      <title>Experiment simple rust kafka collector</title>
       <link>https://batkovic75.github.io/blog/rst-collector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://batkovic75.github.io/blog/rst-collector/</guid>
-      <description>This page is under construction.. 🙂
-Table of Contents Introduction to Kafka and the role of a collector Prerequisites for implementing a Kafka collector using Rust Setting up the Kafka collector project in Rust Implementing the Kafka collector Testing and deploying the Kafka collector Conclusion and next steps Implementing a Kafka collector using Rust Introduction to Kafka and the role of a collector Kafka is a distributed streaming platform that allows applications to publish and subscribe to data streams in real-time.</description>
+      <description>Table of Contents Introduction to Kafka and the role of a collector Prerequisites for implementing a Kafka collector using Rust Setting up the Kafka collector project in Rust Implementing the Kafka collector Testing and deploying the Kafka collector Conclusion and next steps Implementing a Kafka collector using Rust Introduction to Kafka and the role of a collector Kafka is a distributed streaming platform that allows applications to publish and subscribe to data streams in real-time.</description>
     </item>
     
   </channel>
