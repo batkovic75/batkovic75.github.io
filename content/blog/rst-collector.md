@@ -1,9 +1,7 @@
 ---
-title: "Experiment rust kafka collector at scale"
+title: "Experiment simple rust kafka collector"
 url: "/blog/rst-collector"
 ---
-
-This page is under construction.. 🙂
 
 # Table of Contents
 
@@ -86,10 +84,19 @@ This will tell cargo to download and include the `rdkafka` library in our projec
 ## Implementing the Kafka collector
 
 The key components of a Kafka collector are establishing a connection to the Kafka cluster and configuring the topics to push data to. We will use the `rdkafka` library to handle these tasks in Rust.
+In this section we will see how to create basic kafka producer and consumer.
 
 ### Publishing messages into Kafka
 
-First, we need to create a producer object, which will be used to connect to the Kafka cluster and publish messages to the specified topics. We can do this by calling the ClientConfig::new method from the rdkafka library, like this:
+First, we need to import library elements that will be needed:
+
+```
+use rdkafka::config::ClientConfig;
+use rdkafka::producer::{BaseProducer, BaseRecord};
+use std::time::Duration;
+```
+
+Then, we need to create a producer object, which will be used to connect to the Kafka cluster and publish messages to the specified topics. We can do this by calling the ClientConfig::new method from the rdkafka library, like this:
 
 ```
 let producer: BaseProducer = ClientConfig::new()
@@ -104,30 +111,46 @@ Next, we need to specify the topics in which we want to push collected data. We 
 
 ```
 producer.send(
-        BaseRecord::to("destination_topic")
+    BaseRecord::to("destination_topic")
         .payload("this is the payload")
         .key("this is the key"),
-    ).expect("Failed to enque");
+).expect("Failed to enqueue");
+    
+producer.flush(Duration::from_secs(1));
 ```
 
-This tells the producer to publish to the Kafka topic with the specified topic name "destination_topic".
+This tells the producer to publish to the Kafka topic and flush data to the specified topic name "destination_topic".
 
 
 ### Consuming message from Kafka
 
 Note that it's also fairly easy to consume data from Kafka as well.
+First, we need to import library elements that will be needed:
+
+```
+use rdkafka::Message;
+use rdkafka::config::ClientConfig;
+use rdkafka::consumer::{Consumer, BaseConsumer};
+use std::time::Duration;
+```
+
 If you want to subscribe to published data, you can initialize a consumer this way :
 
 ```
-let consumer: KafkaConsumer = KafkaConsumer::new(brokers, group_id);
+let consumer: BaseConsumer = ClientConfig::new()
+    .set("bootstrap.servers", brokers)
+    .set("group.id", "my_consumer_group")
+    .create()
+    .expect("invalid consumer config");
 ```
 
-This creates a new KafkaConsumer instance and assigns it to the consumer variable. The brokers and group_id parameters are used to specify the Kafka broker(s) to connect to and the consumer group that the collector will belong to.
+This creates a new BaseConsumer instance and assigns it to the consumer variable. The brokers and group_id parameters are used to specify the Kafka broker(s) to connect to and the consumer group that the collector will belong to.
 
 Next, we need to specify the topic that we want to collect data from. We can do this by calling the subscribe method on the consumer object, like this:
 
 ```
-consumer.subscribe("destination_topic");
+consumer.subscribe(&["destination_topic"])
+    .expect("topic subscribe failed");
 ```
 
 This tells the consumer to subscribe to the Kafka topic with the specified topic name "destination_topic". We can subscribe to multiple topics by providing a list of topic names instead of a single name.
@@ -138,10 +161,10 @@ Here is an example of how we can consume messages from the Kafka topic and print
 
 ```
 loop {
-    let messages = consumer.poll();
+    let messages = consumer.poll(Duration::from_secs(2));
     for message in messages {
         match message {
-            Ok(msg) => println!("Received message: {}", msg.payload_view::<str>().unwrap()),
+            Ok(msg) => println!("Received message: {:?}", msg.payload_view::<str>().unwrap()),
             Err(e) => println!("Error: {}", e),
         }
     }
@@ -170,10 +193,8 @@ In conclusion, implementing a Kafka collector using Rust is a relatively simple 
 
 ## Conclusion and Next Steps
 
-In this post, we discussed how to implement a Kafka collector using the Rust programming language. We covered the key steps for setting up the project, implementing the collector, and testing and deploying it to a production environment.
+In this post, we discussed how to implement a Kafka producer / consumer using the Rust programming language. We covered the key steps for setting up the project, implementing the kafka client, and testing and deploying it to a production environment.
 
-By implementing a Kafka collector in Rust, you can take advantage of the language's performance and safety features to create a reliable and efficient data collection system.
+By implementing a Kafka service in Rust, you can take advantage of the language's performance and safety features to create a reliable and efficient data collection system.
 
-There are many potential next steps that you can take with your Kafka collector, such as scaling it to handle larger volumes of data or integrating it with other systems. You can also experiment with different configurations and settings to optimize the collector's performance and reliability.
-
-Overall, implementing a Kafka collector in Rust can be a valuable addition to your data processing infrastructure and is worth considering if you are looking for a fast and reliable way to collect data into Kafka.
+There are many potential next steps that I want to experiment with Kafka client library, such as scaling and benchmarking it to handle larger volumes of data and integrating it with other systems such as MQTT or Websockets.
