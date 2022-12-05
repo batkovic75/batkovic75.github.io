@@ -52,7 +52,7 @@ This page is under construction.. 🙂
 > to the various customers, most of the time in English.
 
 #### DevOps Engineer
-###### *Softathome, Paris, France -- (Nov 2015 - Nov 2017)*
+###### *Softathome, Paris, France -- (Nov 2016 - Nov 2017)*
 
 > I deployed a Data Analytics solution on IaaS cloud for multiple customers.
 > 
@@ -61,6 +61,16 @@ This page is under construction.. 🙂
 >     install different services on it (using **Ansible**).
 >  - Select and configure service monitoring tools, using **Prometheus** in order to collect / store data
 >     and **Grafana** to display metrics dashboards.
+
+#### Embedded Software Engineer
+###### *Softathome, Paris, France -- (Nov 2015 - Nov 2016)*
+
+> I developed and maintained a QoS/QoE monitoring probe deployed in production at a tier 1 level ISP.
+> 
+> In this mission I had the chance to:
+>   - Draft the architecture of the solution
+>   - Develop it in pure C with CI tests to cross compile it on multiple targets
+>   - Integrate it on multiple CPE devices
 
 ---
 
@@ -71,7 +81,6 @@ This page is under construction.. 🙂
 ##### Streaming Analytics
 
 Apache Kafka, Hazelcast, Apache Spark
-
 
 ##### Databases
 
